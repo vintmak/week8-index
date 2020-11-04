@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <style type="text/css">
+
+  #jumbotron {
+    background-image:url('./images/jumbos.jpg');
+    background-size:cover;
+    height: 600px;
+    padding-top: 150px;
+  }
+  .card-jumbo {
+    border-radius: 15px;
+    background-color: rgb(0,0,0,0.5);
+    width: 800px;
+    margin: 0px auto;
+    padding: 30px;
+  }
+  .rental-icon {
+    font-size: 72px;
+  }
+  footer ul li a {
+    color:white;
+    text-decoration: none;
+  }
+  footer ul li i {
+    font-size: 30px;
+  }
+  .bg-black {
+    background-color: black;
+  }
+  </style>
+
+  <title>Hello, world!</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand text-warning" href="#">NakRide</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              How it works
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Owner</a></li>
+              <li><a class="dropdown-item" href="#">Customer</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Customer</a></li>
+              <li><a class="dropdown-item" href="#">Owner</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Register
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Customer</a></li>
+              <li><a class="dropdown-item" href="#">Owner</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class=" text-center text-light" id="jumbotron">
+    <div class="card-jumbo">
+      <h1 class="display-4 text-warning">Motorcycle rental made easy</h1>
+      <p class="lead ">Malaysia's first motorbike sharing. Insurance available for all!</p>
+      <div class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
+
+
+        <div class="col-12">
+          <label for="inlineFormSelectPref">Where</label>
+          <select class="form-select" id="inlineFormSelectPref">
+            <option selected>Seremban</option>
+            <option value="1">Kuala Lumpur</option>
+            <option value="2">Kajang</option>
+            <option value="3">Kuantan</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="inlineFormInputGroupUsername">Pick up date</label>
+          <div class="input-group">
+            <input type="date" class="form-control" id="inlineFormInputGroupUsername" placeholder="Pickup date">
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="inlineFormInputGroupUsername">Return date</label>
+          <div class="input-group">
+            <input type="date" class="form-control" id="inlineFormInputGroupUsername" placeholder="Pickup date">
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="featured-bikers" class="py-5">
+    <div class="container">
+      <h3>Featured Bikes</h3>
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <img src="images/harley.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Harley Davidson Fatboy</h5>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> Seremban Bandar Sri Sendayan, Negeri Sembilan</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img src="images/yamaha2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Yamaha 135C</h5>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> Putrajaya Central, Selangor</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img src="images/ktm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">KTM 250 TPI</h5>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> Damansara Perdana Selangor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="easy-rental" class="bg-warning py-5 text-center">
+      <div class="container">
+        <h3>Easy Motorcycle Rental</h3>
+        <hr style="width:500px;margin:0 auto;" class="my-3">
+        <div class="row">
+          <div class="col-4">
+          <h2 class="rental-icon"><i class="fas fa-search"></i></h2>
+            <h5>Choose a Bike</h5><p>Over 110+ motorcycles listed! Rent the one that suits you.</p></div>
+            <div class="col-4">
+              <h2 class="rental-icon"><i class="fas fa-calendar-alt"></i></h2>
+                <h5>Book your Trip</h5><p>Register your account, select bike and pay.</p></div>
+                <div class="col-4">
+                  <h2 class="rental-icon"><i class="fas fa-motorcycle"></i></h2>
+                    <h5>Go for a Ride</h5><p>Protection options, insurance & unlimited kilometers.</p></div>
+                  </div>
+                </div>
+              </section>
+              <section id="video" class="bg-light py-5 text-center">
+                <h3>Learn about us</h3>
+                <hr style="wideth:500px;margin:0 auto;" class="my-3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UY0QY__2ESQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </section>
+              <footer class="bg-dark py-3">
+                <div class="container">
+                  <div class="row text-light">
+                    <div class="col-3"><h5>Get started</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Owner Guidelines</a></li>
+                        <li><a href="#">Customer Guidelines</a></li>
+                        <li><a href="#">Frequently Asked Questions (FAQ)</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-3">
+                      <h5>Policies</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Terms and Conidtions</a></li>
+                      </ul>
+
+                    </div>
+                    <div class="col-3"><h5>Popular Areas</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Kuala Lumpur</a></li>
+                        <li><a href="#">Ipoh</a></li>
+                        <li><a href="#">Georgetown</a></li>
+                      </ul></div>
+                      <div class="col-3"><h5>Social Media</h5>
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fab fa-facebook"></i></li>
+                          <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
+                          <li class="list-inline-item"><i class="fab fa-twitter_square"></i></li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row py-3">
+                      &copy; 2020 Terminal Bersepadu Selatan, Bandar Tasek Selatan, Kuala Lumpur.
+                    </div>
+                  </div>
+
+                </footer>
+
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper.js -->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper.js and Bootstrap JS
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
